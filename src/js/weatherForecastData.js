@@ -20,6 +20,9 @@ export const weatherForecastData = async (data, key) => {
     API_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${data}&appid=${key}&units=metric`;
   }
 
+  // Temp URL
+  // API_URL = 'http://localhost:4000/forecast';
+
   const response = await fetch(API_URL);
 
   if (!response.ok) {
