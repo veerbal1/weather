@@ -1,11 +1,17 @@
 .logo {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   padding: $spacing-14 $spacing-16;
   border-radius: $border-radius;
   background-color: $tertiary-color;
 
+  .logo-text {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   path {
     fill: $primary-color;
   }
