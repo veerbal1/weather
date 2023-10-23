@@ -11,6 +11,25 @@ body {
     max-width: 1200px;
     user-select: none;
 
+    div {
+      z-index: 1;
+    }
+
+    .video-wrapper {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 115em;
+      overflow: hidden;
+
+      video {
+        width: 100%;
+      }
+    }
+
     .current-weather-section {
       display: flex;
       justify-content: center;
@@ -24,7 +43,7 @@ body {
           margin-right: $spacing-0;
         }
 
-        @include media-query("xlarge") {
+        @include media-query('xlarge') {
           width: calc((100% - 16px) / 2);
 
           &:nth-child(n) {
@@ -46,7 +65,7 @@ body {
           }
         }
 
-        @include media-query("small") {
+        @include media-query('small') {
           width: 100%;
 
           &:nth-child(n) {
@@ -65,7 +84,7 @@ body {
         }
       }
 
-      @include media-query("xlarge") {
+      @include media-query('xlarge') {
         flex-wrap: wrap;
       }
     }
@@ -77,32 +96,32 @@ body {
       grid-column-gap: $spacing-16;
       width: 100%;
 
-      @include media-query("xlarge") {
+      @include media-query('xlarge') {
         grid-template-columns: repeat(3, 1fr);
       }
 
-      @include media-query("large") {
+      @include media-query('large') {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      @include media-query("small") {
+      @include media-query('small') {
         grid-template-columns: 1fr;
       }
     }
 
-    @include media-query("xlarge") {
+    @include media-query('xlarge') {
       padding: $spacing-32 $grid-margin-large;
     }
 
-    @include media-query("large") {
+    @include media-query('large') {
       padding: $spacing-24 $grid-margin-medium;
     }
 
-    @include media-query("medium") {
+    @include media-query('medium') {
       padding: $spacing-20 $grid-margin-small;
     }
 
-    @include media-query("small") {
+    @include media-query('small') {
       padding: $spacing-16 $grid-margin-xsmall;
     }
   }
