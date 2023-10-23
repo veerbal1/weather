@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  margin-bottom: $spacing-16;
+  margin-top: $spacing-16;
   overflow-x: scroll;
   scroll-behavior: smooth;
   -ms-overflow-style: none;
@@ -21,6 +21,8 @@
     white-space: nowrap;
     cursor: pointer;
     transition: transform 0.2s;
+    backdrop-filter: blur(10px);
+    border: $line-weight solid $tertiary-color;
 
     &.active {
       @include typography($font-size-16, $regular-400, $tertiary-color);

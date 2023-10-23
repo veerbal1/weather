@@ -1,11 +1,11 @@
 $light-primary: #0f172a;
 $light-secondary: #ffffff;
-$light-tertiary: #f8fafc;
+$light-tertiary: #f8fafc40;
 $light-accent: #64748b;
 
 $dark-primary: #ffffff;
 $dark-secondary: #0f172a;
-$dark-tertiary: #1e293b;
+$dark-tertiary: #1e293b98;
 $dark-accent: #94a3b8;
 
 @media (prefers-color-scheme: light) {
@@ -74,6 +74,6 @@ $grid-margin-medium: 40px;
 $grid-margin-large: 50px;
 $grid-margin-xlarge: 60px;
 
-$line-weight: 1px;
+$line-weight: 2px;
 
 $border-radius: 8px;
